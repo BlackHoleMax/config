@@ -1,0 +1,108 @@
+
+# 常规设置
+[general]
+# Alacritty 配置文件
+# 使用 JetBrains Mono 字体
+
+# 导入其他配置文件（如果有的话）
+import = []
+working_directory = "None"
+live_config_reload = true
+ipc_socket = true
+
+# 环境变量设置
+[env]
+WINIT_X11_SCALE_FACTOR = "1.0"
+
+# 窗口设置
+[window]
+dimensions = { columns = 80, lines = 24 }
+position = "None"
+padding = { x = 10, y = 10 }
+dynamic_padding = false
+decorations = "Full"
+opacity = 0.98
+blur = false
+startup_mode = "Windowed"
+title = "Alacritty"
+dynamic_title = true
+class = { instance = "Alacritty", general = "Alacritty" }
+decorations_theme_variant = "None"
+resize_increments = false
+option_as_alt = "None"
+level = "Normal"
+
+# 滚动设置
+[scrolling]
+history = 10000
+multiplier = 3
+
+# 字体设置
+[font]
+normal = { family = "JetBrains Mono", style = "Regular" }
+bold = { family = "JetBrains Mono", style = "Bold" }
+italic = { family = "JetBrains Mono", style = "Italic" }
+bold_italic = { family = "JetBrains Mono", style = "Bold Italic" }
+size = 12.0
+offset = { x = 0, y = 0 }
+glyph_offset = { x = 0, y = 0 }
+builtin_box_drawing = true
+
+# 颜色设置
+[colors]
+primary = { background = "#1e1e1e", foreground = "#d4d4d4" }
+cursor = { text = "CellBackground", cursor = "CellForeground" }
+vi_mode_cursor = { text = "CellBackground", cursor = "CellForeground" }
+search = { matches = { foreground = "#181818", background = "#ac4242" }, focused_match = { foreground = "#181818", background = "#f4bf75" } }
+hints = { start = { foreground = "#181818", background = "#f4bf75" }, end = { foreground = "#181818", background = "#ac4242" } }
+line_indicator = { foreground = "None", background = "None" }
+footer_bar = { foreground = "#181818", background = "#d8d8d8" }
+selection = { text = "CellBackground", background = "CellForeground" }
+normal = { black = "#2d2d2d", red = "#e06c75", green = "#98c379", yellow = "#e5c07b", blue = "#61afef", magenta = "#c678dd", cyan = "#56b6c2", white = "#d4d4d4" }
+bright = { black = "#6b6b6b", red = "#e06c75", green = "#98c379", yellow = "#e5c07b", blue = "#61afef", magenta = "#c678dd", cyan = "#56b6c2", white = "#ffffff" }
+dim = { black = "#0f0f0f", red = "#712b2b", green = "#5f6f3a", yellow = "#a17e4d", blue = "#456877", magenta = "#704d68", cyan = "#4d7770", white = "#8e8e8e" }
+indexed_colors = []
+transparent_background_colors = false
+draw_bold_text_with_bright_colors = false
+
+# 铃铛设置
+[bell]
+animation = "Linear"
+duration = 0
+color = "#ffffff"
+
+# 选择设置
+[selection]
+semantic_escape_chars = ",│`|:\"' ()[]{}<>\t"
+save_to_clipboard = false
+
+# 光标设置
+[cursor]
+style = { shape = "Block", blinking = "Off" }
+vi_mode_style = "None"
+blink_interval = 750
+blink_timeout = 5
+unfocused_hollow = true
+thickness = 0.15
+
+# 终端设置
+[terminal]
+shell = "/bin/zsh"
+osc52 = "OnlyCopy"
+
+# 鼠标设置
+[mouse]
+hide_when_typing = false
+bindings = []
+
+# 提示设置
+[hints]
+alphabet = "jfkdls;ahgurieowpq"
+enabled = []
+
+# 键盘绑定设置
+[keyboard]
+bindings = [
+    { key = "N", mods = "Control|Shift", action = "CreateNewWindow" },
+    { key = "L", mods = "Control|Shift", chars = "l" }
+]
